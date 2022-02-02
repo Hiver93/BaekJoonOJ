@@ -1,44 +1,35 @@
+#include <stdio.h>
 #include <iostream>
 #include <vector>
 using namespace std;
 
 int main()
-{	
-	int M,N;
+{
+    int n, m, r = 0;
+    cin >> n >> m;
 
-	cin >> N >> M;
-	vector<int> vec(N);
-	int tempValue;
-	for (int i = 0; i < N; i++)
-	{
-		cin >> tempValue;
-		vec.push_back(tempValue);
-	}
+    vector<int> arr(n);
 
-	tempValue = vec[0] + vec[1] + vec[2];
-	int temp = M - tempValue;
-	if (temp < 0)
-		temp *= -1;
-	
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
 
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = i+1; j < N; j++)
-		{
-			for (int k = j + 1; k < N; k++)
-			{
-				int newValue;
-				newValue = vec[i] + vec[j] + vec[k];
-				int newTemp = M - newValue;
-				if (newTemp < 0)
-				{					
-					newTemp *= -1;
-				}
-				if (tempValue > newTemp)
-					temp = newValue;
-			}
-		}
-	}
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            for (int k = j + 1; k < n; k++)
+            {
+                if (arr[i] + arr[j] + arr[k] <= m &&
+                    r < arr[i] + arr[j] + arr[k])
+                {
+                    r = arr[i] + arr[j] + arr[k];
+                }
+            }
+        }
+    }
 
-	cout << temp;
+    cout << r;
+    return 0;
 }

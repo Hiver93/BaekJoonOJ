@@ -1,57 +1,151 @@
 #include <iostream>
+#include <vector>
+#include <stdio.h>
 
+// 무언가 - 일때 문제가 될 것 같음
 int main()
 {
-	int T;
-	std::cin >> T;
-	for (int i = 0; i < T; i++)
+	int t;
+	std::cin >> t;	
+	for (int k = 0; k < t; k++)
 	{
-		int arr1[3];
-		int arr2[3];
+		bool isFitNum = 0;
+		int distance;
+		int detectSum;
+		int root = 0;
+		std::vector<int> vec1(3);
+		std::vector<int> vec2(3);
 
-		std::cin >> arr1[0] >> arr1[1] >> arr1[2];
-		std::cin >> arr2[0] >> arr2[1] >> arr2[2];
-
-		if (arr1[0] == arr2[0] && arr1[1] == arr2[1] && arr1[2] == arr2[2])
+		for (int i = 0; i < 3; i++)
 		{
-			std::cout << -1 << std::endl;
-			continue;
+			std::cin >> vec1[i];
 		}
-
-		int disSq;
-		int rDis = arr1[2] + arr2[2];
+		for (int i = 0; i < 3; i++)
+		{
+			std::cin >> vec2[i];
+		}
 		
-
-		disSq = (arr2[0] - arr1[0]) * (arr2[0] - arr1[0]) + (arr2[1] - arr1[1]) * (arr2[1] - arr1[1]);
-
-		int j = 1;
-		while(disSq / j > j)
+		if (vec1[0] == vec2[0] && vec1[1] == vec2[1])
 		{
-			j++;		
-		}
-
-
-		if (rDis < j)
-		{
-			std::cout << 0 << std::endl;
-		}
-		else if (rDis == j)
-		{
-			if (j * j == disSq)
+			if (vec1[2] == vec2[2])
 			{
-				std::cout << 1 << std::endl;
+				if (vec1[2] == 0)
+				{
+					std::cout << 1 << std::endl;
+					continue;
+				}
+				std::cout << -1 << std::endl;
+				continue;
 			}
 			else
 			{
 				std::cout << 0 << std::endl;
+				continue;
 			}
 		}
-		else
+
+		distance = (vec1[0] - vec2[0])* (vec1[0] - vec2[0]) + (vec1[1] - vec2[1]) * (vec1[1] - vec2[1]);
+		detectSum = (vec1[2] + vec2[2]) * (vec1[2] + vec2[2]);
+
+		if (vec1[2] == 0)
+		{
+			if (vec2[2] * vec2[2] == distance)
+			{
+				std::cout << 1 << std::endl;
+				continue;
+			}
+			else
+			{
+				std::cout << 0 << std::endl;
+				continue;
+			}
+		}
+
+		if (vec2[2] == 0)
+		{
+			if (vec1[2] * vec1[2] == distance)
+			{
+				std::cout << 1 << std::endl;
+				continue;
+			}
+			else
+			{
+				std::cout << 0 << std::endl;
+				continue;
+			}
+		}
+
+
+
+
+		while (root * root < distance)
+		{
+			root++;
+		}
+		root--;
+		if (root * root == distance)
+		{
+			isFitNum = 1;
+		}
+
+		if (vec1[2] < vec2[2])
+		{
+			if (root + vec1[2] < vec2[2])
+			{
+				std::cout << 0 << std::endl;
+				continue;
+			}
+			if (root + vec1[2] == vec2[2])
+			{
+				if (isFitNum)
+				{
+					std::cout << 1 << std::endl;
+					continue;
+				}
+				else
+				{
+					std::cout << 2 << std::endl;
+					continue;
+				}
+			}
+		}
+		if (vec2[2] < vec1[2])
+		{
+			if (root + vec2[2] < vec1[2])
+			{
+				std::cout << 0 << std::endl;
+				continue;
+			}
+			if (root + vec2[2] == vec1[2])
+			{
+				if (isFitNum)
+				{
+					std::cout << 1 << std::endl;
+					continue;
+				}
+				else
+				{
+					std::cout << 2 << std::endl;
+					continue;
+				}
+			}
+		}
+
+		if (distance == detectSum)
+		{
+			std::cout << 1 << std::endl;
+			continue;
+		}
+		else if (distance < detectSum)
 		{
 			std::cout << 2 << std::endl;
+			continue;
+		}
+		else if (distance > detectSum)
+		{
+			std::cout << 0 << std::endl;
+			continue;
 		}
 	}
-
 	return 0;
-
 }
