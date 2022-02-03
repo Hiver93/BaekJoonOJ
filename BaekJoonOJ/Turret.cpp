@@ -78,7 +78,7 @@ int main()
 
 
 
-		while (root * root < distance)
+		while (root * root <= distance)
 		{
 			root++;
 		}
