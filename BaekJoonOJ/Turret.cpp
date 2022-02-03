@@ -2,7 +2,6 @@
 #include <vector>
 #include <stdio.h>
 
-// 무언가 - 일때 문제가 될 것 같음
 int main()
 {
 	int t;
