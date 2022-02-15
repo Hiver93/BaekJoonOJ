@@ -24,7 +24,6 @@
     <ProjectGuid>{e1a55130-17aa-4394-8dcc-ba853194fb89}</ProjectGuid>
     <RootNamespace>BruteForce</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>BruteForce_2798_BlackJack</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
