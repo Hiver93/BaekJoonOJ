@@ -59,8 +59,8 @@ int main()
 	range = max - min;
 	//Áß¾Ó°ª
 	mid = result[n / 2];
-
-	cout << round(average) << '\n' << mid << '\n' << freq << '\n' << range << endl;
+	int t = round(average);
+	cout << t << '\n' << mid << '\n' << freq << '\n' << range << endl;
 
 }
  
