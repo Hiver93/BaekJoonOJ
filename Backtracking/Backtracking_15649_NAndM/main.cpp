@@ -3,7 +3,7 @@
 using namespace std;
 
 int* result;
-void func(int *arr,int size, int m, int n)
+void func(int* arr, int size, int m, int n)
 {
 	if (size == 0)
 	{
@@ -25,10 +25,10 @@ void func(int *arr,int size, int m, int n)
 				check = 1;
 				continue;
 			}
-			temp[j-check] = arr[j];
+			temp[j - check] = arr[j];
 		}
 		result[m - size] = arr[i];
-		func(temp, size-1, m, n-1);
+		func(temp, size - 1, m, n - 1);
 		delete[] temp;
 	}
 }
@@ -45,7 +45,7 @@ int main()
 	{
 		arr[i - 1] = i;
 	}
-	func(arr, size, m,n);
+	func(arr, size, m, n);
 	delete[] arr;
 	delete[] result;
 }
