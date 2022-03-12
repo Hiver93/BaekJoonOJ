@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Backtracking_15651_NAndM3",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Backtracking_15652_NAndM4", "Backtracking_15652_NAndM4\Backtracking_15652_NAndM4.vcxproj", "{205A71A1-E09A-4B1E-862E-8889CAF07771}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Backtracking_9663_N-Queen", "Backtracking_9663_N-Queen\Backtracking_9663_N-Queen.vcxproj", "{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{205A71A1-E09A-4B1E-862E-8889CAF07771}.Release|x64.Build.0 = Release|x64
 		{205A71A1-E09A-4B1E-862E-8889CAF07771}.Release|x86.ActiveCfg = Release|Win32
 		{205A71A1-E09A-4B1E-862E-8889CAF07771}.Release|x86.Build.0 = Release|Win32
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Debug|x64.ActiveCfg = Debug|x64
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Debug|x64.Build.0 = Debug|x64
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Debug|x86.ActiveCfg = Debug|Win32
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Debug|x86.Build.0 = Debug|Win32
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Release|x64.ActiveCfg = Release|x64
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Release|x64.Build.0 = Release|x64
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Release|x86.ActiveCfg = Release|Win32
+		{6A774DB8-2EE5-49FF-AEA8-7044B04EDACF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
