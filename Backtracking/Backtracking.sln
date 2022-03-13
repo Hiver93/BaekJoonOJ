@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Backtracking_2580_Sudoku", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Backtracking_14888_Operator", "Backtracking_14888_Operator\Backtracking_14888_Operator.vcxproj", "{499A3480-1313-4C5E-9AB1-0F249A34EA5B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Backtracking_14889_StartAndLink", "Backtracking_14889_StartAndLink\Backtracking_14889_StartAndLink.vcxproj", "{D741DA95-10E4-4D88-B0C3-1DE880F39261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{499A3480-1313-4C5E-9AB1-0F249A34EA5B}.Release|x64.Build.0 = Release|x64
 		{499A3480-1313-4C5E-9AB1-0F249A34EA5B}.Release|x86.ActiveCfg = Release|Win32
 		{499A3480-1313-4C5E-9AB1-0F249A34EA5B}.Release|x86.Build.0 = Release|Win32
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Debug|x64.ActiveCfg = Debug|x64
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Debug|x64.Build.0 = Debug|x64
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Debug|x86.ActiveCfg = Debug|Win32
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Debug|x86.Build.0 = Debug|Win32
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Release|x64.ActiveCfg = Release|x64
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Release|x64.Build.0 = Release|x64
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Release|x86.ActiveCfg = Release|Win32
+		{D741DA95-10E4-4D88-B0C3-1DE880F39261}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
