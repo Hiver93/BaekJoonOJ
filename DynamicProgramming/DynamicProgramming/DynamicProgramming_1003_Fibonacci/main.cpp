@@ -16,6 +16,7 @@ void fibonacci(int n, int* arr0, int* arr1, bool* c)
         fibonacci(n - 1, arr0, arr1, c);
     }
 
+
     arr0[n] = arr0[n - 2] + arr0[n - 1];
     arr1[n] = arr1[n - 2] + arr1[n - 1];
     c[n] = 1;
