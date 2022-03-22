@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1003_Fib
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_9184_ExcitingFuction", "DynamicProgramming_9184_ExcitingFuction\DynamicProgramming_9184_ExcitingFuction.vcxproj", "{41355BCF-22AC-4279-A175-C3B06B1FB13A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1901_01Tile", "DynamicProgramming_1901_01Tile\DynamicProgramming_1901_01Tile.vcxproj", "{F401E95E-D75F-4CEF-A979-DE929CD42578}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{41355BCF-22AC-4279-A175-C3B06B1FB13A}.Release|x64.Build.0 = Release|x64
 		{41355BCF-22AC-4279-A175-C3B06B1FB13A}.Release|x86.ActiveCfg = Release|Win32
 		{41355BCF-22AC-4279-A175-C3B06B1FB13A}.Release|x86.Build.0 = Release|Win32
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Debug|x64.ActiveCfg = Debug|x64
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Debug|x64.Build.0 = Debug|x64
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Debug|x86.ActiveCfg = Debug|Win32
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Debug|x86.Build.0 = Debug|Win32
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x64.ActiveCfg = Release|x64
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x64.Build.0 = Release|x64
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x86.ActiveCfg = Release|Win32
+		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
