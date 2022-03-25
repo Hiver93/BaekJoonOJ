@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_9184_Exc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1901_01Tile", "DynamicProgramming_1901_01Tile\DynamicProgramming_1901_01Tile.vcxproj", "{F401E95E-D75F-4CEF-A979-DE929CD42578}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1149_RGBStreet", "DynamicProgramming_1149_RGBStreet\DynamicProgramming_1149_RGBStreet.vcxproj", "{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x64.Build.0 = Release|x64
 		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x86.ActiveCfg = Release|Win32
 		{F401E95E-D75F-4CEF-A979-DE929CD42578}.Release|x86.Build.0 = Release|Win32
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Debug|x64.ActiveCfg = Debug|x64
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Debug|x64.Build.0 = Debug|x64
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Debug|x86.ActiveCfg = Debug|Win32
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Debug|x86.Build.0 = Debug|Win32
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x64.ActiveCfg = Release|x64
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x64.Build.0 = Release|x64
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x86.ActiveCfg = Release|Win32
+		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
