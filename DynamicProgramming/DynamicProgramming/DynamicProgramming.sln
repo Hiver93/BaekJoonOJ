@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1901_01T
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1149_RGBStreet", "DynamicProgramming_1149_RGBStreet\DynamicProgramming_1149_RGBStreet.vcxproj", "{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1932_IntegralTriangle", "DynamicProgramming_1932_IntegralTriangle\DynamicProgramming_1932_IntegralTriangle.vcxproj", "{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x64.Build.0 = Release|x64
 		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x86.ActiveCfg = Release|Win32
 		{7F3B12EA-56C5-45E1-9F3C-4F2D2469762E}.Release|x86.Build.0 = Release|Win32
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Debug|x64.ActiveCfg = Debug|x64
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Debug|x64.Build.0 = Debug|x64
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Debug|x86.ActiveCfg = Debug|Win32
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Debug|x86.Build.0 = Debug|Win32
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Release|x64.ActiveCfg = Release|x64
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Release|x64.Build.0 = Release|x64
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Release|x86.ActiveCfg = Release|Win32
+		{E5B457AE-1BEB-46E8-98A0-AFB415A519D9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
