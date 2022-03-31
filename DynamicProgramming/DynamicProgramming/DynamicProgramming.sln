@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_2156_Win
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_11053_LIS", "DynamicProgramming_11053_LIS\DynamicProgramming_11053_LIS.vcxproj", "{813FFDCC-0639-443C-B245-0D387A2AF23A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_11054_BitonicSequence", "DynamicProgramming_11054_BitonicSequence\DynamicProgramming_11054_BitonicSequence.vcxproj", "{02B8E267-6D41-4416-B627-30E98335C709}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x64.Build.0 = Release|x64
 		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x86.ActiveCfg = Release|Win32
 		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x86.Build.0 = Release|Win32
+		{02B8E267-6D41-4416-B627-30E98335C709}.Debug|x64.ActiveCfg = Debug|x64
+		{02B8E267-6D41-4416-B627-30E98335C709}.Debug|x64.Build.0 = Debug|x64
+		{02B8E267-6D41-4416-B627-30E98335C709}.Debug|x86.ActiveCfg = Debug|Win32
+		{02B8E267-6D41-4416-B627-30E98335C709}.Debug|x86.Build.0 = Debug|Win32
+		{02B8E267-6D41-4416-B627-30E98335C709}.Release|x64.ActiveCfg = Release|x64
+		{02B8E267-6D41-4416-B627-30E98335C709}.Release|x64.Build.0 = Release|x64
+		{02B8E267-6D41-4416-B627-30E98335C709}.Release|x86.ActiveCfg = Release|Win32
+		{02B8E267-6D41-4416-B627-30E98335C709}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
