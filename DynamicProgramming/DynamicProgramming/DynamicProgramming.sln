@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_10844_Ea
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_2156_WineTasting", "DynamicProgramming_2156_WineTasting\DynamicProgramming_2156_WineTasting.vcxproj", "{657F4456-80AB-47A5-9C3B-49E388BC0816}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_11053_LIS", "DynamicProgramming_11053_LIS\DynamicProgramming_11053_LIS.vcxproj", "{813FFDCC-0639-443C-B245-0D387A2AF23A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x64.Build.0 = Release|x64
 		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x86.ActiveCfg = Release|Win32
 		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x86.Build.0 = Release|Win32
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Debug|x64.ActiveCfg = Debug|x64
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Debug|x64.Build.0 = Debug|x64
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Debug|x86.ActiveCfg = Debug|Win32
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Debug|x86.Build.0 = Debug|Win32
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x64.ActiveCfg = Release|x64
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x64.Build.0 = Release|x64
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x86.ActiveCfg = Release|Win32
+		{813FFDCC-0639-443C-B245-0D387A2AF23A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
