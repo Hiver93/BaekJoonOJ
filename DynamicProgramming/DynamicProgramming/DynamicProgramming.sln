@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_2579_Sta
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1463_Make1", "DynamicProgramming_1463_Make1\DynamicProgramming_1463_Make1.vcxproj", "{1D7ADC27-FA75-4B81-A966-0AD8EACCD296}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_10844_EasyStairsNumber", "DynamicProgramming_10844_EasyStairsNumber\DynamicProgramming_10844_EasyStairsNumber.vcxproj", "{E766062F-A8AB-4CF4-9B02-9C4978E260F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{1D7ADC27-FA75-4B81-A966-0AD8EACCD296}.Release|x64.Build.0 = Release|x64
 		{1D7ADC27-FA75-4B81-A966-0AD8EACCD296}.Release|x86.ActiveCfg = Release|Win32
 		{1D7ADC27-FA75-4B81-A966-0AD8EACCD296}.Release|x86.Build.0 = Release|Win32
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Debug|x64.ActiveCfg = Debug|x64
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Debug|x64.Build.0 = Debug|x64
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Debug|x86.ActiveCfg = Debug|Win32
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Debug|x86.Build.0 = Debug|Win32
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x64.ActiveCfg = Release|x64
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x64.Build.0 = Release|x64
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x86.ActiveCfg = Release|Win32
+		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
