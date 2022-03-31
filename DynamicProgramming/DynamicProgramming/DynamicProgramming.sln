@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1463_Mak
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_10844_EasyStairsNumber", "DynamicProgramming_10844_EasyStairsNumber\DynamicProgramming_10844_EasyStairsNumber.vcxproj", "{E766062F-A8AB-4CF4-9B02-9C4978E260F8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_2156_WineTasting", "DynamicProgramming_2156_WineTasting\DynamicProgramming_2156_WineTasting.vcxproj", "{657F4456-80AB-47A5-9C3B-49E388BC0816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x64.Build.0 = Release|x64
 		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x86.ActiveCfg = Release|Win32
 		{E766062F-A8AB-4CF4-9B02-9C4978E260F8}.Release|x86.Build.0 = Release|Win32
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Debug|x64.ActiveCfg = Debug|x64
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Debug|x64.Build.0 = Debug|x64
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Debug|x86.ActiveCfg = Debug|Win32
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Debug|x86.Build.0 = Debug|Win32
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x64.ActiveCfg = Release|x64
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x64.Build.0 = Release|x64
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x86.ActiveCfg = Release|Win32
+		{657F4456-80AB-47A5-9C3B-49E388BC0816}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
