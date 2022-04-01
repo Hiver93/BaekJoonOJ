@@ -48,10 +48,6 @@ int main()
 			}
 		}
 	}
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i][0] << ' ' << arr[i][1] << endl;
-	}
 
 	for (int i = 1; i < n; i++)
 	{
