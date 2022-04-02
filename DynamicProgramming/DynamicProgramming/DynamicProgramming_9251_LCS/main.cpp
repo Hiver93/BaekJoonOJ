@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+int idx[1000][1000]{0};
 int main() {
 	int check[1000]{0};
-	int idx[1000]{0};
 	string str1;
 	string str2;
 	int ans=0;
@@ -27,26 +26,45 @@ int main() {
 			{
 				exist = 1;
 				check[i] = 1;
-				idx[i] = j;
+				idx[i][0] = j;
 				break;
 			}
 		}
-		if(exist)
+		if (exist)
+		{
 			for (int j = i; j >= 0; j--)
 			{
 				if (check[i] <= check[j] + 1)
 				{
-					for (int k = idx[j]+1; k < str2.length(); k++)
+					for (int k = idx[j][0] + 1; k < str2.length(); k++)
 					{
 						if (str1[i] == str2[k])
 						{
-							idx[i] = k;
+							idx[i][0] = k;
 							check[i] = check[j] + 1;
 							break;
 						}
 					}
 				}
 			}
+			int maxIdx = idx[i][0];
+			for (int j = idx[i][0] + 1; j < str2.length(); j++)
+			{
+				if (str2[j] == str1[i])
+				{
+					maxIdx = j;
+				}
+			}
+			int cIdx = 0;
+			for(int j = idx[i][0]; j<maxIdx; j++)
+			{			
+				if (check[i] - 1 == check[j])
+				{
+					idx[i][cIdx] = j;
+					cIdx++;
+				}
+			}
+		}
 		if (ans < check[i])
 			ans = check[i];
 	}
