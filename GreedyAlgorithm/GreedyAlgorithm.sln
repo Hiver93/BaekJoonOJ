@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32319.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GreedyAlgorithm", "GreedyAlgorithm\GreedyAlgorithm.vcxproj", "{D9364113-DACD-4263-93D3-1FEDCA3E616C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Debug|x64.ActiveCfg = Debug|x64
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Debug|x64.Build.0 = Debug|x64
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Debug|x86.Build.0 = Debug|Win32
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Release|x64.ActiveCfg = Release|x64
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Release|x64.Build.0 = Release|x64
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Release|x86.ActiveCfg = Release|Win32
+		{D9364113-DACD-4263-93D3-1FEDCA3E616C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78C2F286-A49B-4A85-9275-5A821F94F47E}
+	EndGlobalSection
+EndGlobal
