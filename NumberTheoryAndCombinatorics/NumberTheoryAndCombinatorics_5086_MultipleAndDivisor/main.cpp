@@ -5,7 +5,6 @@ int main()
 {
 	int a, b;
 	cin >> a >> b;
-
 	while (a && b)
 	{
 		if (a % b == 0)
