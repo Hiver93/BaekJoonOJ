@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberTheoryAndCombinatoric
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberTheoryAndCombinatorics_2609_GCFandLCM", "NumberTheoryAndCombinatorics_2609_GCFandLCM\NumberTheoryAndCombinatorics_2609_GCFandLCM.vcxproj", "{DF2C55A6-2537-41CE-9564-99458B47FA47}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumberTheoryAndCombinatorics_1934_LCM", "NumberTheoryAndCombinatorics_1934_LCM\NumberTheoryAndCombinatorics_1934_LCM.vcxproj", "{10A4E676-3DE9-492F-9C2C-484FE9EE2555}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{DF2C55A6-2537-41CE-9564-99458B47FA47}.Release|x64.Build.0 = Release|x64
 		{DF2C55A6-2537-41CE-9564-99458B47FA47}.Release|x86.ActiveCfg = Release|Win32
 		{DF2C55A6-2537-41CE-9564-99458B47FA47}.Release|x86.Build.0 = Release|Win32
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Debug|x64.ActiveCfg = Debug|x64
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Debug|x64.Build.0 = Debug|x64
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Debug|x86.ActiveCfg = Debug|Win32
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Debug|x86.Build.0 = Debug|Win32
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Release|x64.ActiveCfg = Release|x64
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Release|x64.Build.0 = Release|x64
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Release|x86.ActiveCfg = Release|Win32
+		{10A4E676-3DE9-492F-9C2C-484FE9EE2555}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
