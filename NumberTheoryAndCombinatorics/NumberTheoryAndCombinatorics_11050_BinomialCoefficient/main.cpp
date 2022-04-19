@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 int Factorial(int n)
 {
 	int result = 1;
@@ -16,7 +17,7 @@ int main()
 	cin >> n >> k;
 
 	if (k == 0)
-		cout << 0;
+		cout << 1;
 	else
-		cout << Factorial(n) / (Factorial(k) * Factorial(n - k));
+		cout << (Factorial(n)) / (Factorial(k) * Factorial(n - k));
 }
