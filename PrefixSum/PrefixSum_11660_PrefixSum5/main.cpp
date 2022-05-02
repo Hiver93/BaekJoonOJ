@@ -25,7 +25,7 @@ int main()
 
 	for (int i = 0; i < m; i++)
 	{
-		cin >> x1 >> y1 >> x2 >> y2;
-		printf("%d\n", arr[y2][x2] - arr[y2][x1 - 1] - (arr[y1 - 1][x2]-arr[y1-1][x1-1]));
+		cin >> y1 >> x1 >> y2 >> x2;
+		printf("%d\n", arr[y2][x2] - arr[y2][x1 - 1] - arr[y1 - 1][x2] + arr[y1 - 1][x1 - 1]);
 	}
 }
