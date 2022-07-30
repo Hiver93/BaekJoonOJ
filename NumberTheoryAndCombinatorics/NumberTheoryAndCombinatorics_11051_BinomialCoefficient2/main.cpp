@@ -1,32 +1,29 @@
 #include <iostream>
 using namespace std;
 
-unsigned long long arr[1001]{ 1, 1, 2 };
-unsigned long long Factorial(int n)
+int arr[1001][1001];
+void Func(int n, int current)
 {
-	if (arr[n])
+	if (n + 1 == current)
 	{
-		return arr[n];
+		return;
 	}
-	if (!arr[n - 1])
+	arr[current][0] = 1;
+	arr[current][current] = 1;
+	for (int i = 1; i < n; ++i)
 	{
-		Factorial(n - 1);
+		arr[current][i] = (arr[current - 1][i - 1] + arr[current - 1][i]) % 10007;
 	}
-	arr[n] = (arr[n - 1] * n)%10007;
-
-	return arr[n];
+	Func(n, current + 1);
 }
 
 int main()
 {
 	int n, k;
 	cin >> n >> k;
-	for (int i = 1; i < n+1; i++)
-	{
-		arr[i] = (arr[i - 1] * i)%10007;
-	}
-	if (k == 0)
-		cout << 1;
-	else
-		cout << ((arr[n]*10007) / (arr[k] * arr[n - k]))%10007;
+	arr[0][0] = 1;
+	arr[1][0] = 1;
+	arr[1][1] = 1;
+	Func(n, 2);
+	cout << arr[n][k];
 }

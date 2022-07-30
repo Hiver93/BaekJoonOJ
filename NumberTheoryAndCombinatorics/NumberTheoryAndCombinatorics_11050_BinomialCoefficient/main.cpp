@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int Factorial(int n)
+int Func(int n)
 {
 	int result = 1;
 	for (int i = n; i > 1; i--)
@@ -19,5 +19,5 @@ int main()
 	if (k == 0)
 		cout << 1;
 	else
-		cout << (Factorial(n)) / (Factorial(k) * Factorial(n - k));
+		cout << (Func(n)) / (Func(k) * Func(n - k));
 }
