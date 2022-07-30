@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2cf58546-8cd7-4f30-8836-7c7e97e9decf}</ProjectGuid>
-    <RootNamespace>Stack10828Stack</RootNamespace>
+    <ProjectGuid>{b2aab1e2-c4c7-4af4-b54e-131895b20754}</ProjectGuid>
+    <RootNamespace>Recursion17478WhatIsTheRecursion</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
