@@ -35,6 +35,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_1912_Pre
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_12865_Knapsack", "DynamicProgramming_12865_Knapsack\DynamicProgramming_12865_Knapsack.vcxproj", "{40671865-E486-45E8-84A2-C64FF46A7B4D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicProgramming_2449_light", "DynamicProgramming_2449_light\DynamicProgramming_2449_light.vcxproj", "{4D3F0CD6-F936-450B-9C57-3957810E46FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +173,14 @@ Global
 		{40671865-E486-45E8-84A2-C64FF46A7B4D}.Release|x64.Build.0 = Release|x64
 		{40671865-E486-45E8-84A2-C64FF46A7B4D}.Release|x86.ActiveCfg = Release|Win32
 		{40671865-E486-45E8-84A2-C64FF46A7B4D}.Release|x86.Build.0 = Release|Win32
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Debug|x64.ActiveCfg = Debug|x64
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Debug|x64.Build.0 = Debug|x64
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Debug|x86.Build.0 = Debug|Win32
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Release|x64.ActiveCfg = Release|x64
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Release|x64.Build.0 = Release|x64
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Release|x86.ActiveCfg = Release|Win32
+		{4D3F0CD6-F936-450B-9C57-3957810E46FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
