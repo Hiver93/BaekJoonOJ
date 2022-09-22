@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GreedyAlgorithm_1541_LostBr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GreedyAlgorithm_13305_GasStation", "GreedyAlgorithm_13305_GasStation\GreedyAlgorithm_13305_GasStation.vcxproj", "{AB624694-B036-4B32-BAE8-0B3BFF30E8E2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GreedyAlgorithm_2138_LightAndSwitch", "GreedyAlgorithm_2138_LightAndSwitch\GreedyAlgorithm_2138_LightAndSwitch.vcxproj", "{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{AB624694-B036-4B32-BAE8-0B3BFF30E8E2}.Release|x64.Build.0 = Release|x64
 		{AB624694-B036-4B32-BAE8-0B3BFF30E8E2}.Release|x86.ActiveCfg = Release|Win32
 		{AB624694-B036-4B32-BAE8-0B3BFF30E8E2}.Release|x86.Build.0 = Release|Win32
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Debug|x64.ActiveCfg = Debug|x64
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Debug|x64.Build.0 = Debug|x64
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Debug|x86.ActiveCfg = Debug|Win32
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Debug|x86.Build.0 = Debug|Win32
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Release|x64.ActiveCfg = Release|x64
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Release|x64.Build.0 = Release|x64
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Release|x86.ActiveCfg = Release|Win32
+		{67C5F5A1-AD55-42FA-A0A8-A5F999404C7D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

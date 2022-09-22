@@ -2,44 +2,32 @@
 #include <vector>
 using namespace std;
 
-int arr[31][31];
-void Func(int m, int current)
+int arr[31]{ 0 };
+vector<pair<int, string>> vec;
+int ans = 0;
+
+void Func2(int n, int current, int last, int val) 
 {
-	if (m + 1 == current)
+	if (n == current)
 	{
+		ans += val;
 		return;
 	}
-	arr[current][0] = 1;
-	arr[current][1] = 1;
-	for (int i = 1; i < current; ++i)
+	for (int i = last + 1; i < vec.size(); ++i)
 	{
-		arr[current][i] = arr[current - 1][i - 1] + arr[current - 1][i];
-	}
-	Func(m, current + 1);
-}
-
-int Func2(int a, int b, int start, vector<pair<int,string>> vec)
-{
-	int r = 0;
-	for (int i = 0; i < b; ++i)
-	{
-
+		Func2(n, current + 1, i, val/vec[i].first);
 	}
 }
 
 int main()
 {
-	arr[0][0] = 1;
-	arr[1][0] = 1;
-	arr[1][1] = 1;
-	Func(30, 2);
 	int t;
 	cin >> t;
 	for (int i = 0; i < t; ++i)
 	{
-		vector<pair<int, string>> vec;
+		vec.clear();
+		ans = 0;
 		int n;
-		int ans = 0;
 		cin >> n;
 		for (int j = 0; j < n; ++j)
 		{
@@ -61,15 +49,17 @@ int main()
 				vec.push_back(make_pair(1, type));
 			}
 		}
+		n = 1;
+		for (int j = 0; j < vec.size(); ++j)
+		{
+			n *= vec[j].first;
+		}
 		
 		for (int j = 0; j < vec.size(); ++j)
 		{
-			int tmp = 1;
-			for (int k = 0; k < j + 1; ++k)
-			{
-				
-			}
+			Func2(j, 0, -1, n);
 		}
 		cout << ans << endl;
+
 	}
 }
