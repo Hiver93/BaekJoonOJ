@@ -14,8 +14,12 @@ public class Main {
 			int n = sc.nextInt();
 			boolean ans = true;
 			Node root = new Node();
+			String[] sArr = new String[n];
+			for(int i = 0; i < n; ++i) {
+				sArr[i] = sc.next();
+			}
 			for(int i = 0; i < n; ++i) {				
-				String str = sc.next();
+				String str = sArr[i];
 				Node node = root;
 				for(int j = 0; j < str.length(); ++j) {					
 					if(node.nums[str.charAt(j)-'0'] == null) {
@@ -29,11 +33,14 @@ public class Main {
 					}
 					if(node.data != null) {
 						ans = false;
+						break;
 					}
 				}
 				if(node.cCount != 0) {
 					ans = false;
 				}
+				if(!ans)
+					break;
 				node.data = str;
 			}
 			
