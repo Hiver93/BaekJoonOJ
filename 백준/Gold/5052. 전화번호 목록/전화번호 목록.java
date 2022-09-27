@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 class Node{
@@ -7,16 +10,16 @@ class Node{
 }
 
 public class Main {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int T = sc.nextInt();
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int T = Integer.parseInt(br.readLine());
 		for(int tc = 0; tc < T; ++tc) {
-			int n = sc.nextInt();
+			int n = Integer.parseInt(br.readLine());
 			boolean ans = true;
 			Node root = new Node();
 			String[] sArr = new String[n];
 			for(int i = 0; i < n; ++i) {
-				sArr[i] = sc.next();
+				sArr[i] = br.readLine();
 			}
 			for(int i = 0; i < n; ++i) {				
 				String str = sArr[i];
