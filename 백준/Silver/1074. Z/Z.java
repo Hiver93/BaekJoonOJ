@@ -1,57 +1,41 @@
 import java.util.Scanner;
 
 public class Main {
-	static int n, row, col;
-	static int ans = 0;
-	public static void func(int start, int i, int j, int n) {
-		if(n == 1) {
-			if(row%2 == 0 && col%2 == 0)
-				ans = start;
-			else if(row%2 == 0 && col%2 == 1)
-				ans = start+1;
-			else if(row%2 == 1 && col%2 == 0)
-				ans = start+2;
+	static int targetR;
+	static int targetC;
+	public static int func(int len, int r, int c, int num) {
+		if(len == 2) {
+			if(r < targetR && c < targetC)
+				return num + 3;
+			else if(r < targetR)
+				return num + 2;
+			else if(c < targetC)
+				return num + 1;
 			else
-				ans = start+3;
-			return;
+				return num;
 		}
-		if(i + n <= row && j + n <= col) {
-			func(start + n * n * 3, i+n,j+n, n);
-			return;
-		}
-		else if(i + n <= row) {
-			func(start + n * n * 2,i+n,j, n);
-			return;
-		}
-		else if(j + n <= col) {
-			func(start + n * n, i, j+n, n);
-			return;
-		}
-		func(start,i,j,n/2);
-
+		
+		if(r + len/2 <= targetR && c + len/2 <= targetC)
+			return func(len / 2,r+len/2,c+len/2, num + len/2 * len/2 * 3);
+		else if(r + len/2 <= targetR)
+			return func(len / 2, r + len/2 , c, num + len/2 * len/2 * 2);
+		else if(c + len/2 <= targetC)
+			return func(len / 2, r, c + len/2, num + len/2 * len/2);
+		else
+			return func(len / 2, r, c, num);
+		
+		
 	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		n = sc.nextInt();
+		int n = sc.nextInt();
+		targetR = sc.nextInt();
+		targetC = sc.nextInt();
 		int len = 2;
 		for(int i = 1; i < n; ++i) {
-			len *= 2;
+			len*=2;
 		}
-		row = sc.nextInt();
-		col = sc.nextInt();
-		if(n == 1) {
-			if(row == 0 && col == 0)
-				System.out.println(0);
-			else if(row == 0 && col == 1)
-				System.out.println(1);
-			else if(row == 1 && col == 0)
-				System.out.println(2);
-			else
-				System.out.println(3);
-		}
-		else {
-			func(0,0,0,len);
-			System.out.println(ans);
-		}
+		System.out.println(func(len,0,0,0));
 	}
 }
