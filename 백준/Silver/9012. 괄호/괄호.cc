@@ -3,40 +3,36 @@ using namespace std;
 
 int main()
 {
-	char arr[50];
+	int stack[50];
 	int top = -1;
-
-	int n; 
+	int n;
 	cin >> n;
-
 	for (int i = 0; i < n; ++i)
 	{
-		bool check = true;
 		string str;
+		bool check = true;
 		cin >> str;
-
 		for (int j = 0; j < str.size(); ++j)
 		{
 			char tmp = str[j];
 			if (tmp == '(')
 			{
-				arr[++top] = '(';
+				top++;
+				stack[top] = '(';
 			}
 			else
 			{
-				if (-1 < top && arr[top] == '(')
+				if (-1 < top && stack[top] == '(')
 				{
 					top--;
 				}
 				else
 				{
 					check = false;
-					break;
 				}
 			}
 		}
-
-		if (!check || top != -1)
+		if (top != -1 || !check) 
 		{
 			cout << "NO" << endl;
 		}
