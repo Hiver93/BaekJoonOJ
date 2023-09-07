@@ -15,5 +15,5 @@ int main()
 	cin >> a >> b;
 	long long num = (a < b) ? fun(b, a) : fun(a, b);
 	
-	cout << num * a * b / num / num;
+	cout << a * b / num;
 }
