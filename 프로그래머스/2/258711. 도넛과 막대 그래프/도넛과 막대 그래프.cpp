@@ -2,7 +2,6 @@
 #include <vector>
 #include <list>
 #include <map>
-#include <iostream>
 
 using namespace std;
 
@@ -32,7 +31,6 @@ void func(int idx){
         
         if(visit[*i]){        
             if(visit[*i] == cur&&tmp == m.end()){
-                cout << idx << endl;
                 answer[DONUT]++;
             }
             continue;
