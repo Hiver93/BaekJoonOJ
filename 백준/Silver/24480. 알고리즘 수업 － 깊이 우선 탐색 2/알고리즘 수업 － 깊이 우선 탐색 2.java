@@ -2,7 +2,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class Main {
 	static boolean[] visited;
@@ -20,6 +19,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		StringBuilder sb = new StringBuilder();
 		int n = sc.nextInt();
 		int m = sc.nextInt();
 		int st = sc.nextInt();
@@ -41,9 +41,8 @@ public class Main {
 			e[b].add(a);
 		}
 		dfs(v,e,st);
-		System.out.println(
-				Arrays.stream(v,1,n+1).mapToObj(Integer::toString).collect(Collectors.joining("\n")
-						));
+		Arrays.stream(v,1,n+1).forEach(i->sb.append(i).append("\n"));
+		System.out.println(sb);
 		
 	}
 }
