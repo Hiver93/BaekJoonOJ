@@ -38,12 +38,11 @@ public class Main {
 				return 0;
 			}
 		});
-		
 		for(int i = 0; i < n; ++i) {
 			if(arr[i][3] == k) {
 				int cnt = 0;
-				for(int j = i; j >= 0; --j) {
-					if(arr[i].equals(arr[j])) {
+				for(int j = i-1; j >= 0; --j) {
+					if(arr[i][0] == arr[j][0] && arr[i][1] == arr[j][1] && arr[i][2] == arr[j][2]) {
 						cnt++;
 					}
 				}
