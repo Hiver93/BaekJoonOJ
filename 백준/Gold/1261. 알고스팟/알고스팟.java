@@ -1,0 +1,56 @@
+import java.util.PriorityQueue;
+import java.util.Scanner;
+
+public class Main {
+	static class Node{
+		int idx;
+		int dis;
+		Node(int idx, int dis){
+			this.idx = idx;
+			this.dis = dis;
+		}
+	}
+	
+	static int[] dr = {-1,1,0,0};
+	static int[] dc = {0,0,-1,1};
+	static int n, m;
+	
+	public static boolean boundOk(int y, int x) {
+		return 0<=y && 0<=x && y <n && x <m;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		m = sc.nextInt(); n = sc.nextInt();
+		int[][] arr = new int[n][m];
+		int[][] disArr = new int[n][m];
+		for(int i = 0; i < n; ++i) {
+			String str = sc.next();
+			for(int j = 0; j < m; ++j) {
+				arr[i][j] = str.charAt(j)-'0';
+				disArr[i][j] = 2147483647;
+			}
+		}
+		PriorityQueue<Integer[]> pq = new PriorityQueue<Integer[]>((a,b)->a[2]-b[2]);
+		pq.add(new Integer[] {0,0,0});
+		disArr[0][0] = 0;
+		while(!pq.isEmpty()) {
+			Integer[] cur = pq.remove();
+			int y = cur[0];
+			int x = cur[1];
+			int dis = cur[2];
+			if(disArr[y][x] < dis)
+				continue;
+			for(int i = 0; i < 4; ++i) {
+				int ny = y + dr[i];
+				int nx = x +dc[i];
+				if(!boundOk(ny,nx) || disArr[ny][nx] <= dis + arr[ny][nx])
+					continue;
+				disArr[ny][nx] = dis+arr[ny][nx];
+				pq.add(new Integer[]{ny,nx,dis+arr[ny][nx]});
+			}
+		}
+		System.out.println(disArr[n-1][m-1]);
+		
+	}
+}
