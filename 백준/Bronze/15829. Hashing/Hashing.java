@@ -9,10 +9,12 @@ public class Main {
 		long n = 1;
 		
 		for(int i = 0; i < str.length(); ++i) {
-			sum += ((str.charAt(i)-'a'+1)*n);
-			n *= 31;
+			long tmp = str.charAt(i)-'a'+1;
+			sum += (long)(tmp * n) % 1234567891;
+			sum %= 1234567891;
+			n *= ((long)31);
+			n %= 1234567891l;
 		}
-		
-		System.out.println(sum % 1234567891);
+		System.out.println(sum % 1234567891l);
 	}
 }
