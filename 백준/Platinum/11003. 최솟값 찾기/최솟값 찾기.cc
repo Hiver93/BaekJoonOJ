@@ -36,10 +36,12 @@ void CheckStack(int num, int& len)
 
 int main()
 {
+    ios::sync_with_stdio(0);
+	cin.tie(0);
 	cin >> n >> l;
 	for (int i = 0; i < n; ++i)
 	{
-		scanf("%d",&arr[i]);
+        cin >> arr[i];
 	}
 
 	// stack의 가장 아래 (코드 편하기 짜기 위함), 그리고 가장 뒤 숫자를 넣어두고 시작
